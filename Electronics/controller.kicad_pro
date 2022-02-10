@@ -431,6 +431,22 @@
     [
       "c6e9e20f-e1c7-406c-85b2-c13e1555a103",
       ""
+    ],
+    [
+      "4be341a8-7d6b-4e6c-8950-2eaf98627d00",
+      "Hbridge"
+    ],
+    [
+      "f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21",
+      "MCU"
+    ],
+    [
+      "54222278-f439-4dd5-b7a2-082afad1f322",
+      "Power"
+    ],
+    [
+      "aa31faa7-1bf1-4443-8396-f678eeba3772",
+      "Connectors"
     ]
   ],
   "text_variables": {}
