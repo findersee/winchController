@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Motor Controller")
+    (date "2022-02-18")
+    (rev "1.0")
+    (company "findersee.fi")
+  )
+
   (lib_symbols
   )
 
@@ -53,6 +60,10 @@
   (wire (pts (xy 83.82 134.62) (xy 163.83 134.62))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 47ca04bb-6b04-4be8-8871-71c72a75cbae)
+  )
+  (wire (pts (xy 83.82 146.05) (xy 163.83 146.05))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 484433f7-4f60-4134-8e8e-31b168a60520)
   )
   (wire (pts (xy 83.82 137.16) (xy 163.83 137.16))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -183,14 +194,14 @@
     )
   )
 
-  (sheet (at 163.83 71.12) (size 34.29 75.565) (fields_autoplaced)
+  (sheet (at 163.83 71.12) (size 34.29 78.105) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid aa31faa7-1bf1-4443-8396-f678eeba3772)
     (property "Sheet name" "Connectors" (id 0) (at 163.83 70.4084 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "Connectors.kicad_sch" (id 1) (at 163.83 147.2696 0)
+    (property "Sheet file" "Connectors.kicad_sch" (id 1) (at 163.83 149.8096 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "MOTOR NEG" input (at 163.83 104.14 180)
@@ -237,23 +248,27 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 22253f43-b3ab-4be3-8fbf-236fa0e77767)
     )
+    (pin "Over Current" output (at 163.83 146.05 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid adbae0a7-884c-449a-a341-4c3ca7c2389a)
+    )
   )
 
-  (sheet (at 50.8 71.12) (size 33.02 76.2) (fields_autoplaced)
+  (sheet (at 50.8 71.12) (size 33.02 79.375) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21)
     (property "Sheet name" "MCU" (id 0) (at 50.8 70.4084 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "MCU.kicad_sch" (id 1) (at 50.8 147.9046 0)
+    (property "Sheet file" "MCU.kicad_sch" (id 1) (at 50.8 151.0796 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "Button" input (at 83.82 73.66 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid db131a38-6dac-462b-9207-5d8d6204241c)
     )
-    (pin "LIMIT 1" bidirectional (at 83.82 76.2 0)
+    (pin "LIMIT MCU 1" bidirectional (at 83.82 76.2 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 2a7f1d6b-371c-4bd8-af79-0068b84d1338)
     )
@@ -261,7 +276,7 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 7fdeff88-a282-44e7-8e22-c2abbcb3eb0e)
     )
-    (pin "LIMIT 2" bidirectional (at 83.82 78.74 0)
+    (pin "LIMIT MCU 2" bidirectional (at 83.82 78.74 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 5bdca709-13ab-42b8-aa6c-0f1d06aa3456)
     )
@@ -309,6 +324,10 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid e9cc6602-b37f-49df-b5d5-18af9b4377ed)
     )
+    (pin "OCP" input (at 83.82 146.05 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid fbdac4e0-6fed-447b-bb92-af922b8acc4e)
+    )
   )
 
   (sheet_instances
@@ -320,6 +339,9 @@
   )
 
   (symbol_instances
+    (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/bad63119-e054-4a62-a294-b2922b556d5c"
+      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/628b297f-f130-4ba6-8d18-c2f1845b4947"
       (reference "#FLG0103") (unit 1) (value "PWR_FLAG") (footprint "")
     )
@@ -361,6 +383,9 @@
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/6c897997-047d-4c7c-8938-6f380c664381"
       (reference "#PWR0113") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/3d442bb6-0b90-46de-bf54-bae2e37773e3"
+      (reference "#PWR0114") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/ed52b762-9670-48f1-b85a-1d5b2cfb4325"
       (reference "#PWR0115") (unit 1) (value "+3V3") (footprint "")
@@ -452,6 +477,18 @@
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/572207e7-2d06-442b-b120-06188c322618"
       (reference "#PWR0144") (unit 1) (value "GND") (footprint "")
     )
+    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/c9e38c04-94ca-441b-876a-1034a67ff213"
+      (reference "#PWR0145") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/bb7efc93-5239-40f8-b1ab-d7d884fc95bb"
+      (reference "#PWR0146") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/35aaf033-7e2f-4a4d-8f41-984e9a637950"
+      (reference "#PWR0147") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/9922df6a-2872-47cb-99a9-5b361d86eb09"
+      (reference "#PWR0148") (unit 1) (value "GND") (footprint "")
+    )
     (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/50c34630-6674-4756-a8e8-c57a351dbf5d"
       (reference "#PWR0301") (unit 1) (value "GND") (footprint "")
     )
@@ -524,9 +561,6 @@
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/f537296e-5026-4c78-a045-05c0cb1866bf"
       (reference "#PWR0518") (unit 1) (value "VDD") (footprint "")
     )
-    (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/041b37ec-4c82-454f-b375-b6208bb03fb7"
-      (reference "#PWR0519") (unit 1) (value "GND") (footprint "")
-    )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/ff23efb8-153d-4afb-b85c-c4e507f3b942"
       (reference "#PWR0520") (unit 1) (value "GND") (footprint "")
     )
@@ -538,9 +572,6 @@
     )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/02dddb1d-db56-4aea-8497-0fcad96a9877"
       (reference "#PWR0523") (unit 1) (value "VDD") (footprint "")
-    )
-    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/3d442bb6-0b90-46de-bf54-bae2e37773e3"
-      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/5521e049-8492-4615-a629-fed11f1f3e70"
       (reference "A301") (unit 1) (value "Arduino_Nano_Every") (footprint "Module:Arduino_Nano")
@@ -715,6 +746,9 @@
     )
     (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/a45d7738-5550-43f0-a462-0f894a0d3e39"
       (reference "J301") (unit 1) (value "UART") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/beca0a7f-e627-41bb-b94d-b67d3a8b20e0"
+      (reference "J302") (unit 1) (value "I2C") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/45e2ff1d-a830-4e8c-8bc6-8947bd353757"
       (reference "J501") (unit 1) (value "Switches") (footprint "TerminalBlock:TerminalBlock_bornier-6_P5.08mm")
@@ -891,19 +925,19 @@
       (reference "TP507") (unit 1) (value "GND") (footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/f91bcd7d-e175-40b2-96c1-31a50d044668"
-      (reference "U201") (unit 1) (value "74AHC08") (footprint "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm")
+      (reference "U201") (unit 1) (value "74LS08") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/3437108d-25a1-40a2-8fab-34d22c11db3c"
-      (reference "U201") (unit 2) (value "74AHC08") (footprint "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm")
+      (reference "U201") (unit 2) (value "74LS08") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/9327f1aa-dbea-4fcc-bdc3-4fd2e32fe928"
-      (reference "U201") (unit 3) (value "74AHC08") (footprint "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm")
+      (reference "U201") (unit 3) (value "74LS08") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/b533a8b5-764b-46ef-842e-43cd02dc1193"
-      (reference "U201") (unit 4) (value "74AHC08") (footprint "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm")
+      (reference "U201") (unit 4) (value "74LS08") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/a700115e-151f-44f9-809a-cb5c5c50120b"
-      (reference "U201") (unit 5) (value "74AHC08") (footprint "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm")
+      (reference "U201") (unit 5) (value "74LS08") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/6c64cdd5-b388-4d44-a385-adcffa867cd6"
       (reference "U202") (unit 1) (value "IR2101") (footprint "Package_SO:SO-8_3.9x4.9mm_P1.27mm")

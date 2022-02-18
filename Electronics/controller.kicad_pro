@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.39999999999999997
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -156,7 +156,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "power_pin_not_driven|774700|584200|ce78326d-89e3-4909-8a83-50b7b84dac4d|00000000-0000-0000-0000-000000000000"
+    ],
     "meta": {
       "version": 0
     },
