@@ -592,10 +592,10 @@
       (reference "C205") (unit 1) (value "10u") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/623e802f-a925-4434-8a77-c99f007adf0f"
-      (reference "C206") (unit 1) (value "C") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
+      (reference "C206") (unit 1) (value "100u") (footprint "Findersee_parts:CP_Radial_D12.5mm_P3.5-5.0mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/69a9fe5e-6b41-4de6-9638-ca87bfb6fcdc"
-      (reference "C207") (unit 1) (value "C") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
+      (reference "C207") (unit 1) (value "100u") (footprint "Findersee_parts:CP_Radial_D12.5mm_P3.5-5.0mm")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/64bf9fb9-5698-4efb-9ab1-4571d05166ed"
       (reference "C208") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -604,7 +604,7 @@
       (reference "C209") (unit 1) (value "10u") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/d041a091-8323-4358-8f49-8727c755758b"
-      (reference "C210") (unit 1) (value "C") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
+      (reference "C210") (unit 1) (value "100u") (footprint "Findersee_parts:CP_Radial_D12.5mm_P3.5-5.0mm")
     )
     (path "/f1c4a73a-91cc-421a-b2f5-51b0bd7a9f21/40deb473-9f31-47ca-b074-23c81d2e8441"
       (reference "C301") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -695,6 +695,24 @@
     )
     (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/3addd157-6a3a-40bc-bd50-e76d4756b06b"
       (reference "D203") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/4689acdc-b909-494d-8a2c-537dd01c9b05"
+      (reference "D204") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/6162ca4b-dc16-45c6-b387-b90feda90b70"
+      (reference "D205") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/6f96892a-3867-4b58-bed2-8e3c16967714"
+      (reference "D206") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/95c6b157-c871-406b-9357-d6d62a988028"
+      (reference "D207") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/50e75a5e-0511-4b28-bc91-506655cc2b56"
+      (reference "D208") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/4be341a8-7d6b-4e6c-8950-2eaf98627d00/9fe7f176-b486-44e4-9d8e-05f308473f64"
+      (reference "D209") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/97721f7f-595f-4c41-9211-9e40c9ec251b"
       (reference "D501") (unit 1) (value "1N5819") (footprint "Diode_SMD:D_SOD-123")
