@@ -1,0 +1,17 @@
+ERC report (20/02/2022 18:53:53, Encoding UTF8)
+
+***** Sheet /
+
+***** Sheet /Hbridge/
+
+***** Sheet /MCU/
+[pin_to_pin]: Pins of type Power output and Power output are connected
+    ; Severity: error (excluded)
+    @(166.37 mm, 69.85 mm): Symbol A301 [Arduino_Nano_Every] Pin 17 [3V3, Power output, Line]
+    @(232.41 mm, 90.17 mm): Symbol U400 [R-78C3.3-1.0] Pin 3 [OUT, Power output, Line]
+
+***** Sheet /Power/
+
+***** Sheet /Connectors/
+
+ ** ERC messages: 1  Errors 1  Warnings 0
