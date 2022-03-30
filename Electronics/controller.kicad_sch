@@ -777,6 +777,15 @@
     (path "/aa31faa7-1bf1-4443-8396-f678eeba3772/04510455-2447-4b00-8cae-5153fde8721b"
       (reference "F501") (unit 1) (value "20A") (footprint "digikey-footprints:3550-2_KEYS")
     )
+    (path "/54222278-f439-4dd5-b7a2-082afad1f322/5b1c395d-fc7d-4e42-aea6-a9733189ca7a"
+      (reference "FID401") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1.5mm_Mask3mm")
+    )
+    (path "/54222278-f439-4dd5-b7a2-082afad1f322/91abd95d-4bfe-4cc7-8378-0f1bc09cce1e"
+      (reference "FID402") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1.5mm_Mask3mm")
+    )
+    (path "/54222278-f439-4dd5-b7a2-082afad1f322/0957372d-e7cb-47c1-949e-76b685dee41d"
+      (reference "FID403") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1.5mm_Mask3mm")
+    )
     (path "/54222278-f439-4dd5-b7a2-082afad1f322/13d77c7a-66a7-4899-8fc7-c91177c2eedc"
       (reference "H401") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3_DIN965")
     )
